@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name:		 WP Bootstrap Starter Child
 Theme URI:		 http://childtheme-generator.com/
 Description:	 WP Bootstrap Starter Child is a child theme of WP Bootstrap Starter, created by ChildTheme-Generator.com
@@ -8,8 +8,73 @@ Template:		 wp-bootstrap-starter
 Version:		 1.0.0
 Text Domain:	 wp-bootstrap-starter-child
 */
-
-
-/*
-    Add your custom styles here
-*/
+:root {
+  --premiere :#E62246;
+  --seconde: #000000f0;
+}
+#content.site-content {
+  padding-top: 0;
+}
+.container {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1460px;
+  }
+}
+.page-title {
+  z-index: 99;
+}
+.txt-shadow {
+  text-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.carousel-inner {
+  height: 70vh;
+}
+.btn-premiere {
+  background-color: var(--premiere);
+  color: var(--white);
+  border-color: var(--premiere);
+}
+.btn-premiere:hover {
+  background-color: #C61E3C;
+  color: var(--white);
+  border-color: #C61E3C;
+}
+.btn-seconde {
+  background-color: var(--seconde);
+  color: var(--white);
+  border-color: var(--seconde);
+}
+.btn-seconde:hover {
+  background-color: #1e1e1ef0;
+  color: var(--white);
+  border-color: #1e1e1ef0;
+}
+.black-container {
+  background-color: var(--seconde) !important;
+}
+.red-container {
+  background-color: var(--premiere);
+}
+.grey-container {
+  background-color: #f7f7f7;
+}
+.souligneur-red::after, .souligneur-black::after {
+  content: "";
+  background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-131@2x.png');
+  display: block;
+  height: 100%;
+  position: relative;
+  z-index: 9999;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 80px;
+}
+.souligneur-red::after {
+  background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-131@2x.png');
+}
+.souligneur-black::after {
+  background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-132@2x.png');
+}

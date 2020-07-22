@@ -84,5 +84,5 @@
     <?php endif; ?>
 	<div id="content" class="site-content">
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row d-block">
                 <?php endif; ?>
