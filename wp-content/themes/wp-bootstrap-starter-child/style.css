@@ -27,10 +27,11 @@ Text Domain:	 wp-bootstrap-starter-child
   z-index: 99;
 }
 .txt-shadow {
-  text-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  text-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.34)
 }
-.carousel-inner {
-  height: 70vh;
+.btn {
+  border-radius: 6px;
+  padding: 0.775rem 1.75rem;
 }
 .btn-premiere {
   background-color: var(--premiere);
@@ -52,6 +53,61 @@ Text Domain:	 wp-bootstrap-starter-child
   color: var(--white);
   border-color: #1e1e1ef0;
 }
+.btn-link::after {
+  font-family: "Font Awesome 5 Free";
+  padding-left: 1em;
+  content:"\f061";
+  height: auto;
+  width: auto;
+  position: relative;
+}
+.btn-link:hover {
+  text-decoration: none;
+}
+.btn-link:hover::after {
+  padding-left: 2em;
+  transition: padding-left .4s ease;
+}
+.inline-link, .inline-link:hover {
+  color: inherit;
+}
+.icn-bef {
+  font-weight: 600
+}
+.icn-bef:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+.icn-bef::before, .nav-previous a::before, .nav-next a::before {
+  font-family: "Font Awesome 5 Free";
+  padding-right: 1em;
+  height: auto;
+  width: auto;
+  position: relative;
+}
+.mail::before {
+  content:"\f0e0";
+}
+.tel::before {
+  content:"\f879";
+}
+.back::before {
+  content: "\f053";
+}
+.nav-previous a, .nav-next a, .nav-previous a::before, .nav-next a::before, .widget-area a, .widget-area a:hover {
+  color: var(--seconde);
+  font-weight: bold;
+}
+.overlay {
+  background : linear-gradient(to bottom, rgba(84, 84, 84, 0.24), rgba(0, 0, 0, 0.86));
+  height: inherit;
+}
+.overlay-1 {
+  background: linear-gradient(to bottom, rgba(84, 84, 84, 0.24), rgba(0, 0, 0, 0.86));
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
 .black-container {
   background-color: var(--seconde) !important;
 }
@@ -61,20 +117,35 @@ Text Domain:	 wp-bootstrap-starter-child
 .grey-container {
   background-color: #f7f7f7;
 }
+.grey-container-2 {
+  background-color: var(--gray);
+}
 .souligneur-red::after, .souligneur-black::after {
   content: "";
-  background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-131@2x.png');
   display: block;
   height: 100%;
   position: relative;
   z-index: 9999;
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 80px;
+  background-size: inherit;
 }
 .souligneur-red::after {
   background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-131@2x.png');
 }
 .souligneur-black::after {
   background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-132@2x.png');
+}
+.logo-bg {
+  background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/LOGO-BONNEFIS-B-COULEUR-FOND-NOIR@2x.png');
+  background-repeat: no-repeat;
+  background-position: top 0% left -16%;
+  background-size: contain;
+}
+.entry-meta a {
+  color: var(--white);
+}
+.title {
+  position: relative;
+  bottom: 20%;
 }

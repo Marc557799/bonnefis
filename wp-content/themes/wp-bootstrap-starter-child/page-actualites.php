@@ -7,22 +7,22 @@ get_header();
 ?>
     <section id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-          <div class="container-fluid">
-            <div class="row justify-content-center py-5" style="background-image:url('<?php the_field('image_de_la_banniere')?>'); background-repeat: no-repeat; background-size: cover; background-position:center;">
-              <div class="page-title text-center my-5">
-                <h1 class="text-uppercase font-weight-bold text-white txt-shadow">
-                    <?php the_title()?>
-                </h1>
-                <h2 class="text-uppercase font-weight-bold text-white txt-shadow">
-                    Votre spécialiste auto à Rodez
-                </h2>
-              </div>
+          <div class="container-fluid" style="background-image:url('<?php the_field('image_de_la_banniere')?>'); background-repeat: no-repeat; background-size: cover; background-position:center;">
+            <div class="row justify-content-center py-5 overlay">
+                <div class="page-title text-center my-5">
+                  <h1 class="text-uppercase font-weight-bold text-white txt-shadow">
+                      <?php the_title()?>
+                  </h1>
+                  <h2 class="text-uppercase font-weight-bold text-white txt-shadow">
+                      Votre spécialiste auto à Rodez
+                  </h2>
+                </div>
             </div>
           </div>
           <div class="container-fluid">
               <div class="container">
                 <div class="row">
-                  <a href="" title="Retourner à la page d'accueil">Retour à l'accueil</a>
+                  <a href="<?php echo get_home_url()?>" class="inline-link icn-bef back" title="Retourner à la page d'accueil">Retour à l'accueil</a>
                 </div>
               </div>
               <div class="container pt-5">

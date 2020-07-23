@@ -22,6 +22,7 @@ get_header();
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
+              <div class="overlay-1 w-100"></div>
                 <div class="carousel-item active">
                   <img class="d-block w-100" src="<?php the_field("image_1")?>" alt="First slide">
                 </div>
@@ -48,12 +49,13 @@ get_header();
                     Nos services
                   </h2>
                 </div>
-                <div class="row justify-content-between">
+                <div class="row justify-content-between pt-5">
                   <div class="col-md-3 px-0 pb-5">
                     <img src="<?php the_field("vente_image")?>" class="w-100 pb-4" alt="...">
-                    <h3>
+                    <h3 class="mb-1">
                       Vente
                     </h3>
+                    <img src="http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("vente")?>
                     </div>
@@ -61,9 +63,10 @@ get_header();
                   </div>
                   <div class="col-md-3 px-0 pb-5">
                     <img src="<?php the_field("atelier_image")?>" class="w-100 pb-4" alt="...">
-                    <h3>
+                    <h3 class="mb-1">
                       Atelier mécanique
                     </h3>
+                    <img src="http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("atelier_mecanique")?>
                     </div>
@@ -71,9 +74,10 @@ get_header();
                   </div>
                   <div class="col-md-3 px-0 pb-5">
                     <img src="<?php the_field("carrosserie_image")?>" class="w-100 pb-4" alt="...">
-                    <h3>
+                    <h3 class="mb-1">
                       Carroserie
                     </h3>
+                    <img src="http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("carrosserie")?>
                     </div>
@@ -83,12 +87,12 @@ get_header();
           </div>
           <div class="container-fluid black-container py-5">
               <div class="container">
-                <div class="row pt-5">
-                  <div class="col-md pb-5">
+                <div class="row pt-5 justify-content-between">
+                  <div class="col-md-6 pb-5">
                     <img src="<?php the_field("voitures_image")?>" class="w-100" alt="...">
                   </div>
-                  <div class="col-md pb-5">
-                    <div class="row">
+                  <div class="col-md-5 pb-5">
+                    <div class="d-flex">
                       <h2 class="text-white souligneur-red mb-5">Nos Voitures</h2>
                     </div>
                     <div class="text-justify text-white">
@@ -109,7 +113,7 @@ get_header();
                   </div>
                   <div class="col-md pb-5">
                     <a href="#" class="btn-link text-uppercase font-weight-bold text-white" role="button">Envoyez nous vos envies</a>
-                    <p class="text-justify text-white font-italic">
+                    <p class="text-justify text-white font-italic mt-2">
                       Notre équipe s'engage à vous proposer un modèle dans les 72h.
                     </p>
                   </div>
@@ -118,18 +122,18 @@ get_header();
             </div>
             <div class="container-fluid py-5">
                 <div class="container">
-                <div class="row pt-5">
-                  <div class="col-md pb-5">
-                    <div class="row">
+                <div class="row pt-5 justify-content-between">
+                  <div class="col-md-5 pb-5">
+                    <div class="d-flex">
                       <h2 class="souligneur-red mb-5">
                         Qui sommes nous ?
                       </h2>
                     </div>
-                    <p class="text-justify">
+                    <div class="text-justify">
                       <?php the_field("qui_sommes_nous")?>
-                    </p>
+                    </div>
                   </div>
-                  <div class="col-md pb-5">
+                  <div class="col-md-6 pb-5">
                     <img src="<?php the_field("qui_sommes_nous_image")?>" class="w-100" alt="...">
                   </div>
                 </div>
@@ -150,7 +154,8 @@ get_header();
 
                             <div class="col-md-3 px-0 pb-5">
                               <?php the_post_thumbnail(); ?>
-                              <h3><?php the_title(); ?></h3>
+                              <h3 class="pt-4"><?php the_title(); ?></h3>
+                              <img src="http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
                               <p class="text-justify">
                                 <?php the_excerpt(); ?>
                               </p>
@@ -172,7 +177,7 @@ get_header();
                 <div class="container pt-5">
                   <div class="row">
                      <div class="col-md pb-5">
-                       <div class="row">
+                       <div class="d-flex">
                          <h2 class="souligneur-black">
                            Ils parlent de nous
                          </h2>
@@ -182,7 +187,7 @@ get_header();
                         </p>
                     </div>
                     <div class="col-md-4 pb-5 d-flex flex-column">
-                      <div class="row">
+                      <div class="d-flex">
                       <h2 class="souligneur-black">
                         Suivez nous
                       </h2>
