@@ -11,6 +11,10 @@ Text Domain:	 wp-bootstrap-starter-child
 :root {
   --premiere :#E62246;
   --seconde: #000000f0;
+  --font-family-sans-serif: 'Source Sans Pro', sans-serif;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 #content.site-content {
   padding-top: 0;
@@ -37,6 +41,11 @@ Text Domain:	 wp-bootstrap-starter-child
   background-color: var(--premiere);
   color: var(--white);
   border-color: var(--premiere);
+}
+.btn-premiere .nav-link {
+  padding: 0 !important;
+  color: var(--white) !important;
+  font-weight: bold !important;
 }
 .btn-premiere:hover {
   background-color: #C61E3C;
@@ -78,11 +87,52 @@ Text Domain:	 wp-bootstrap-starter-child
   text-decoration: none;
   font-weight: bold;
 }
+.nav-spe-mail a, .nav-spe-tel a {
+  color: var(--seconde) !important;
+  font-weight: bold;
+}
+.nav-spe-mail, .nav-spe-tel {
+  padding-right: 2rem;
+}
+.nav-spe-mail a::before {
+  font-family: "Font Awesome 5 Free";
+  padding-right: 1em;
+  content:"\f0e0";
+  font-weight: bold;
+}
+.nav-spe-tel a::before {
+  font-family: "Font Awesome 5 Free";
+  padding-right: 1em;
+  content:"\f879";
+  font-weight: bold;
+}
+.navbar-nav li {
+  display: flex;
+  align-items: center;
+}
+.mobile-menu{
+    display: none;
+}
+@media only screen and (min-width: 1200px){
+    .desktop-menu{
+        display: block !important;
+    }
+    .mobile-menu{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .desktop-menu{
+        display: none !important;
+    }
+    .mobile-menu{
+        display: block !important;
+    }
+}
 .icn-bef::before, .nav-previous a::before, .nav-next a::before {
   font-family: "Font Awesome 5 Free";
   padding-right: 1em;
-  height: auto;
-  width: auto;
   position: relative;
 }
 .mail::before {
@@ -131,13 +181,13 @@ Text Domain:	 wp-bootstrap-starter-child
   background-size: inherit;
 }
 .souligneur-red::after {
-  background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-131@2x.png');
+  background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-131@2x.png');
 }
 .souligneur-black::after {
-  background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-132@2x.png');
+  background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-132@2x.png');
 }
 .logo-bg {
-  background-image: url('http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/LOGO-BONNEFIS-B-COULEUR-FOND-NOIR@2x.png');
+  background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/LOGO-BONNEFIS-B-COULEUR-FOND-NOIR@2x.png');
   background-repeat: no-repeat;
   background-position: top 0% left -16%;
   background-size: contain;

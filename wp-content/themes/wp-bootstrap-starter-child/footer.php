@@ -32,9 +32,7 @@
 						</p>
 					</div>
 					<div class="col-md-6 pb-5">
-						<p class="text-justify text-white">
-							MAP SHORTCODE
-						</p>
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.4421110749244694%2C44.27638129264758%2C2.4468961358070374%2C44.278783675892335&amp;layer=mapnik&amp;marker=44.27758345673287%2C2.444503605365753" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=44.27758&amp;mlon=2.44450#map=19/44.27758/2.44450&amp;layers=N">Afficher une carte plus grande</a></small>
 					</div>
 				</div>
 			</div>

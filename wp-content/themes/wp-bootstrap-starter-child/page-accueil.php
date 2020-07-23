@@ -55,7 +55,7 @@ get_header();
                     <h3 class="mb-1">
                       Vente
                     </h3>
-                    <img src="http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
+                    <img src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("vente")?>
                     </div>
@@ -66,18 +66,18 @@ get_header();
                     <h3 class="mb-1">
                       Atelier mécanique
                     </h3>
-                    <img src="http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
+                    <img src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("atelier_mecanique")?>
                     </div>
-                    <a class="btn btn-seconde font-weight-bolder mt-4" href="#" role="button">Prendre RDV</a>
+                    <a class="btn btn-seconde font-weight-bolder mt-4" href="https://www.ad.fr/garage/garage-ad-expert-garage-bonnefis" role="button">Prendre RDV</a>
                   </div>
                   <div class="col-md-3 px-0 pb-5">
                     <img src="<?php the_field("carrosserie_image")?>" class="w-100 pb-4" alt="...">
                     <h3 class="mb-1">
                       Carroserie
                     </h3>
-                    <img src="http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
+                    <img src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("carrosserie")?>
                     </div>
@@ -112,7 +112,7 @@ get_header();
                     </div>
                   </div>
                   <div class="col-md pb-5">
-                    <a href="#" class="btn-link text-uppercase font-weight-bold text-white" role="button">Envoyez nous vos envies</a>
+                    <a href="https://www.ad.fr/garage/garage-ad-expert-garage-bonnefis" class="btn-link text-uppercase font-weight-bold text-white" role="button">Envoyez nous vos envies</a>
                     <p class="text-justify text-white font-italic mt-2">
                       Notre équipe s'engage à vous proposer un modèle dans les 72h.
                     </p>
@@ -151,11 +151,10 @@ get_header();
                     <?php if ( $posts_ex_query->have_posts() ) : ?>
                         <!-- the loop -->
                         <?php while ( $posts_ex_query->have_posts() ) : $posts_ex_query->the_post(); ?>
-
                             <div class="col-md-3 px-0 pb-5">
                               <?php the_post_thumbnail(); ?>
                               <h3 class="pt-4"><?php the_title(); ?></h3>
-                              <img src="http://localhost/my-app/Bonnefis-git/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
+                              <img src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3" alt="Divider">
                               <p class="text-justify">
                                 <?php the_excerpt(); ?>
                               </p>
@@ -169,7 +168,7 @@ get_header();
                     <?php endif; ?>
                   </div>
                   <div class="row justify-content-around pb-5">
-                      <a class="btn btn-seconde font-weight-bolder" href="#" role="button">Voir toutes nos actus</a>
+                      <a class="btn btn-seconde font-weight-bolder" href="<?php echo get_page_link($page = 11);?>" role="button">Voir toutes nos actus</a>
                   </div>
                 </div>
               </div>
@@ -182,9 +181,7 @@ get_header();
                            Ils parlent de nous
                          </h2>
                        </div>
-                        <p>
-                            THE GOOGLE REVIEWS SHORTCODE
-                        </p>
+                        
                     </div>
                     <div class="col-md-4 pb-5 d-flex flex-column">
                       <div class="d-flex">
@@ -192,9 +189,7 @@ get_header();
                         Suivez nous
                       </h2>
                       </div>
-                      <p>
-                          THE FACEBOOK SHORTCODE
-                      </p>
+                      <iframe name="f113ec92d7ed2c8" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 323px; height: 500px;" src="https://www.facebook.com/v2.12/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1b6c98a5b1c634%26domain%3Dgaragebonnefis.com%26origin%3Dhttps%253A%252F%252Fgaragebonnefis.com%252Ff80f0505611f2c%26relation%3Dparent.parent&amp;container_width=323&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FGarage-Bonnefis-258740490818020%2F&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline" class="mt-5" width="1000px" height="1000px" frameborder="0"></iframe>
                    </div>
                   </div>
                 </div>

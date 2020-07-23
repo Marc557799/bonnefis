@@ -35,7 +35,7 @@
 			</div>
 		</header><!-- .entry-header -->
 		<div class="entry-content">
-			<a href="<?php echo get_home_url()?>" class="inline-link icn-bef back" title="Retourner à la page d'accueil">Retour à l'accueil</a>
+			<a href="<?php echo get_page_link($page = 11);?>" class="inline-link icn-bef back" title="Retourner à la page des actualités">Retour à la page des actualités</a>
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-md pt-5">
