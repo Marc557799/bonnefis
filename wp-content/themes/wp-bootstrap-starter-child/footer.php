@@ -18,7 +18,7 @@
 	<footer id="colophon" class="site-footer black-container" role="contentinfo">
 		<div class="container-fluid logo-bg">
 			<div class="container pt-5">
-				<div class="row justify-content-between">
+				<div class="row justify-content-around">
 					<div class="col-md-3 pb-5">
 						<div class="d-flex">
 							<h2 class="text-white souligneur-red mb-5">Contact</h2>
@@ -31,8 +31,8 @@
 							<a href="#" class="inline-link" title="Notre page Instagram"><i class="fab fa-instagram"></i></a>
 						</p>
 					</div>
-					<div class="col-md-6 pb-5">
-						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.4421110749244694%2C44.27638129264758%2C2.4468961358070374%2C44.278783675892335&amp;layer=mapnik&amp;marker=44.27758345673287%2C2.444503605365753" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=44.27758&amp;mlon=2.44450#map=19/44.27758/2.44450&amp;layers=N">Afficher une carte plus grande</a></small>
+					<div class="col-md-7 pb-5">
+						<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.4421110749244694%2C44.27638129264758%2C2.4468961358070374%2C44.278783675892335&amp;layer=mapnik&amp;marker=44.27758345673287%2C2.444503605365753" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=44.27758&amp;mlon=2.44450#map=19/44.27758/2.44450&amp;layers=N">Afficher une carte plus grande</a></small>
 					</div>
 				</div>
 			</div>

@@ -16,6 +16,20 @@ Text Domain:	 wp-bootstrap-starter-child
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
+h1, h2 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-weight: 300;
+}
+h3 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
 #content.site-content {
   padding-top: 0;
 }
@@ -110,6 +124,34 @@ body {
   display: flex;
   align-items: center;
 }
+.navbar-brand .mb-m-link, #collapseExample a {
+  color: var(--seconde);
+}
+.navbar-brand .mb-m-link:hover, #collapseExample a:hover {
+  color: var(--premiere);
+}
+#collapseExample .mb-m-link {
+  padding: 31% 5%;
+}
+#collapseExample a {
+  font-size: 1.875rem;
+  display: flex;
+  align-items: center;
+}
+#collapseExample {
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  top: 0;
+  left: 0;
+  padding: 2em;
+  z-index: 99999;
+  background-color: var(--white);
+}
+.mb-m-link:hover {
+  text-decoration: none;
+}
+/*menu specifique mobile*/
 .mobile-menu{
     display: none;
 }
@@ -117,7 +159,7 @@ body {
     .desktop-menu{
         display: block !important;
     }
-    .mobile-menu{
+    .mobile-menu, .mb-m-link{
         display: none !important;
     }
 }
@@ -129,7 +171,19 @@ body {
     .mobile-menu{
         display: block !important;
     }
+    .navbar-brand > a {
+      font-size: 1.5rem;
+    }
+    .navbar-brand {
+      display: flex;
+      width: 100%;
+    }
+    .navbar-brand .text-center {
+      width: 100%;
+    }
 }
+/*end of mobile specifuqe menu*/
+
 .icn-bef::before, .nav-previous a::before, .nav-next a::before {
   font-family: "Font Awesome 5 Free";
   padding-right: 1em;
@@ -189,7 +243,7 @@ body {
 .logo-bg {
   background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/LOGO-BONNEFIS-B-COULEUR-FOND-NOIR@2x.png');
   background-repeat: no-repeat;
-  background-position: top 0% left -16%;
+  background-position: top 0% left -21%;
   background-size: contain;
 }
 .entry-meta a {
@@ -198,4 +252,19 @@ body {
 .title {
   position: relative;
   bottom: 20%;
+}
+#carouselExampleIndicators {
+  height: 60vh;
+}
+#carouselExampleIndicators .carousel-inner, #carouselExampleIndicators .carousel-item {
+  height: inherit;
+}
+.carousel-item img {
+  width: 100%;
+}
+@media only screen and (max-width: 1199px) {
+  .carousel-item img {
+    height: 100%;
+    max-width: 200%;
+  }
 }

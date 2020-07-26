@@ -12,7 +12,7 @@ get_header();
                 <h1 class="text-uppercase font-weight-bold text-white txt-shadow">
                     <?php the_field("titre-1")?>
                 </h1>
-                <h2 class="text-uppercase font-weight-bold text-white txt-shadow">
+                <h2 class="subtitle text-uppercase text-white txt-shadow">
                     <?php the_field("sous_titre_h2")?>
                 </h2>
               </div>
@@ -24,13 +24,13 @@ get_header();
               <div class="carousel-inner">
               <div class="overlay-1 w-100"></div>
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="<?php the_field("image_1")?>" alt="First slide">
+                  <img class="d-block img-fluid" src="<?php the_field("image_1")?>" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="<?php the_field("image_2")?>" alt="Second slide">
+                  <img class="d-block img-fluid" src="<?php the_field("image_2")?>" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="<?php the_field("image_3")?>" alt="Third slide">
+                  <img class="d-block img-fluid" src="<?php the_field("image_3")?>" alt="Third slide">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -49,7 +49,7 @@ get_header();
                     Nos services
                   </h2>
                 </div>
-                <div class="row justify-content-between pt-5">
+                <div class="row justify-content-around pt-5">
                   <div class="col-md-3 px-0 pb-5">
                     <img src="<?php the_field("vente_image")?>" class="w-100 pb-4" alt="...">
                     <h3 class="mb-1">
@@ -87,7 +87,7 @@ get_header();
           </div>
           <div class="container-fluid black-container py-5">
               <div class="container">
-                <div class="row pt-5 justify-content-between">
+                <div class="row pt-5 justify-content-around">
                   <div class="col-md-6 pb-5">
                     <img src="<?php the_field("voitures_image")?>" class="w-100" alt="...">
                   </div>
@@ -105,13 +105,11 @@ get_header();
             </div>
             <div class="container-fluid red-container">
                 <div class="container">
-                <div class="row pt-5">
-                  <div class="col-md pb-5">
-                    <div class="row">
+                <div class="row pt-5 justify-content-around">
+                  <div class="col-md-7 pb-5 d-flex">
                       <h3 class="text-white souligneur-black">Vous n'avez pas trouvé le modèle qui vous correspond ?</h3>
-                    </div>
                   </div>
-                  <div class="col-md pb-5">
+                  <div class="col-md-4 pb-5">
                     <a href="https://www.ad.fr/garage/garage-ad-expert-garage-bonnefis" class="btn-link text-uppercase font-weight-bold text-white" role="button">Envoyez nous vos envies</a>
                     <p class="text-justify text-white font-italic mt-2">
                       Notre équipe s'engage à vous proposer un modèle dans les 72h.
@@ -122,7 +120,7 @@ get_header();
             </div>
             <div class="container-fluid py-5">
                 <div class="container">
-                <div class="row pt-5 justify-content-between">
+                <div class="row pt-5 justify-content-around">
                   <div class="col-md-5 pb-5">
                     <div class="d-flex">
                       <h2 class="souligneur-red mb-5">
@@ -144,7 +142,7 @@ get_header();
                 <div class="row justify-content-center pb-3">
                   <h2 class="souligneur-red mb-5">Nos actualités</h2>
                 </div>
-                <div class="row justify-content-between pb-3">
+                <div class="row justify-content-around pb-3">
                     <?php
                     // affiche les 3 derniers articles
                     $posts_ex_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3)); ?>
@@ -181,7 +179,7 @@ get_header();
                            Ils parlent de nous
                          </h2>
                        </div>
-                        
+
                     </div>
                     <div class="col-md-4 pb-5 d-flex flex-column">
                       <div class="d-flex">
@@ -189,7 +187,7 @@ get_header();
                         Suivez nous
                       </h2>
                       </div>
-                      <iframe name="f113ec92d7ed2c8" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 323px; height: 500px;" src="https://www.facebook.com/v2.12/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1b6c98a5b1c634%26domain%3Dgaragebonnefis.com%26origin%3Dhttps%253A%252F%252Fgaragebonnefis.com%252Ff80f0505611f2c%26relation%3Dparent.parent&amp;container_width=323&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FGarage-Bonnefis-258740490818020%2F&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline" class="mt-5" width="1000px" height="1000px" frameborder="0"></iframe>
+                      <iframe name="f113ec92d7ed2c8" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 100%; height: 500px;" src="https://www.facebook.com/v2.12/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1b6c98a5b1c634%26domain%3Dgaragebonnefis.com%26origin%3Dhttps%253A%252F%252Fgaragebonnefis.com%252Ff80f0505611f2c%26relation%3Dparent.parent&amp;container_width=323&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FGarage-Bonnefis-258740490818020%2F&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline" class="mt-5" width="100%" height="1000px" frameborder="0"></iframe>
                    </div>
                   </div>
                 </div>
