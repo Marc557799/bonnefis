@@ -19,12 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
       <div class="collapse" id="collapseExample">
+        <div class="collapseClose" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+        </div>
         <a class="mb-m-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-times" aria-hidden="true"></i></a>
         <?php
         /* The below code checks if a mobile-menu is set from the backend in the menu settings. If a menu has been set it will be displayed in the header. Or else, a menu has not been set then display a message.*/
@@ -59,9 +60,8 @@
                     <?php else : ?>
                         <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
                     <?php endif; ?>
-                    <a href="" class="mb-m-link send align-items-center d-flex"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                    <a href="mailto:contact@bonnefis.fr" class="mb-m-link send align-items-center d-flex"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
                 </div>
-
                 <?php
                 wp_nav_menu(array(
                 'theme_location'    => 'primary',

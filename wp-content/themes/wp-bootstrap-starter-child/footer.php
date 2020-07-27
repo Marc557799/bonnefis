@@ -16,7 +16,7 @@
 	</div><!-- #content -->
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer black-container" role="contentinfo">
-		<div class="container-fluid logo-bg">
+		<div class="container-fluid logo-bg" id="contact">
 			<div class="container pt-5">
 				<div class="row justify-content-around">
 					<div class="col-md-3 pb-5">
@@ -46,7 +46,7 @@
 				</div><!-- close .site-info -->
 				<div class="col-md text-right pb-1">
 					<p class="m-0 text-white">
-						<a href="/liens" class="inline-link" title="Liens utiles">Liens</a> | <a href="/mentions-legales" class="inline-link" title="Consulter nos mentions légales">Mentions légales</a>
+						<a href="<?php echo get_page_link($page = 107);?>" class="inline-link" title="Consulter nos mentions légales">Mentions légales</a>
 					</p>
 				</div>
 			</div>

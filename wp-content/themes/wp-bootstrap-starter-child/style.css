@@ -2,7 +2,6 @@
 Theme Name:		 WP Bootstrap Starter Child
 Theme URI:		 http://childtheme-generator.com/
 Description:	 WP Bootstrap Starter Child is a child theme of WP Bootstrap Starter, created by ChildTheme-Generator.com
-Author:			 Marc Bailly
 Author URI:		 http://childtheme-generator.com/
 Template:		 wp-bootstrap-starter
 Version:		 1.0.0
@@ -126,7 +125,13 @@ h3 {
   align-items: center;
 }
 .mb-m-link {
-  color: var(--seconde);
+  color: var(--seconde) !important;;
+}
+.mb-m-link:hover {
+  text-decoration: none;
+}
+.burger, .send {
+  font-size: 1.438rem;
 }
 .mb-m-link:hover, #collapseExample .menu-item a:hover {
   color: var(--premiere);
@@ -159,7 +164,6 @@ h3 {
 #collapseExample {
   position: absolute;
   height: 100%;
-  width: 50vw;
   top: 0;
   left: 0;
   padding: 2em;
@@ -167,14 +171,14 @@ h3 {
   background-color: var(--white);
   box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.34)
 }
-.mb-m-link:hover {
-  text-decoration: none;
-}
-.burger {
-  font-size: 1.438rem;
-}
 .logo-zone {
   padding-top: 5em;
+}
+.collapseClose {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 99999;
 }
 /*menu specifique mobile*/
 .mobile-menu{
@@ -190,6 +194,13 @@ h3 {
     .send {
         display: none !important;
     }
+    #collapseExample {
+      width: 30vw;
+    }
+    .collapseClose {
+      width: 70vw;
+      right: -70vw;
+    }
 }
 @media only screen and (max-width: 1199px){
     .desktop-menu{
@@ -204,6 +215,13 @@ h3 {
     }
     .navbar-brand .text-center {
       width: 100%;
+    }
+    #collapseExample {
+      width: 70vw;
+    }
+    .collapseClose {
+      width: 30vw;
+      right: -30vw;
     }
 }
 /*end of mobile specifuqe menu*/
@@ -289,6 +307,19 @@ h3 {
 }
 .carousel-item img {
   width: 100%;
+}
+.carousel-control-prev, .carousel-control-next {
+  z-index: 9999;
+}
+.carousel-control-prev-icon {
+  background-image: url("http://localhost:8888/Bonnefis-for-GIT/wp-content/uploads/2020/07/Groupe-77@2x.png");
+}
+.carousel-control-next-icon {
+  background-image: url("http://localhost:8888/Bonnefis-for-GIT/wp-content/uploads/2020/07/Groupe-78@2x.png");
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 31.5px;
+  height: 51.5px;
 }
 @media only screen and (max-width: 1199px) {
   .carousel-item img {

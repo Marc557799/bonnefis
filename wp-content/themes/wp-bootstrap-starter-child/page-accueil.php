@@ -42,7 +42,7 @@ get_header();
                 <span class="sr-only">Next</span>
               </a>
           </div>
-          <div class="container-fluid py-3">
+          <div class="container-fluid py-3" id="services">
               <div class="container pt-5">
                 <div class="row justify-content-center">
                   <h2 class="souligneur-red mb-2">
@@ -85,7 +85,7 @@ get_header();
                 </div>
               </div>
           </div>
-          <div class="container-fluid black-container py-5">
+          <div class="container-fluid black-container py-5" id="voitures">
               <div class="container">
                 <div class="row pt-5 justify-content-around">
                   <div class="col-md-6 pb-5">
@@ -118,7 +118,7 @@ get_header();
                 </div>
                 </div>
             </div>
-            <div class="container-fluid py-5">
+            <div class="container-fluid py-5" id="quisommesnous">
                 <div class="container">
                 <div class="row pt-5 justify-content-around">
                   <div class="col-md-5 pb-5">
@@ -172,8 +172,8 @@ get_header();
               </div>
               <div class="container-fluid">
                 <div class="container pt-5">
-                  <div class="row">
-                     <div class="col-md pb-5">
+                  <div class="row justify-content-around">
+                     <div class="col-md-6 pb-5" id="googlerev">
                        <div class="d-flex">
                          <h2 class="souligneur-black">
                            Ils parlent de nous
@@ -183,7 +183,7 @@ get_header();
                          <?php echo do_shortcode('[grw place_photo="https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png" place_name="GARAGE BONNEFIS" place_id="ChIJ20mwQWqHrRIRShnsayoQl2A" pagination="5" text_size="120" max_width="100%" refresh_reviews=true lazy_load_img=true reduce_avatars_size=true open_link=true nofollow_link=true]'); ?>
                        </div>
                     </div>
-                    <div class="col-md-4 pb-5 d-flex flex-column">
+                    <div class="col-md-4 pb-5 d-flex flex-column" id="suiveznous">
                       <div class="d-flex">
                       <h2 class="souligneur-black">
                         Suivez nous
