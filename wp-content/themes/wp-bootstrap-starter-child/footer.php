@@ -21,9 +21,9 @@
 				<div class="row justify-content-around">
 					<div class="col-md-3 pb-5">
 						<div class="d-flex">
-							<h2 class="text-white souligneur-red mb-5">Contact</h2>
+							<h2 class="text-white souligneur-red mb-2">Contact</h2>
 						</div>
-						<p class="text-justify text-white">
+						<p class="text-justify text-white font-weight-lighter">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in uienply voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat norin proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
 							<a href="mailto:contact@bonnefis.fr" class="inline-link icn-bef mail" title="Contact par email">contact@bonnefis.fr</a><br><br>
 							<a href="tel:0596849328" class="inline-link icn-bef tel" title="Contact par téléphone">0596849328</a><br><br>

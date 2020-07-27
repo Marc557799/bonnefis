@@ -24,30 +24,34 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-	<header id="masthead" class="site-header navbar-static-top bg-white" role="banner">
-    <div class="collapse" id="collapseExample">
-      <a class="mb-m-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-times" aria-hidden="true"></i></a>
-      <?php
-      /* The below code checks if a mobile-menu is set from the backend in the menu settings. If a menu has been set it will be displayed in the header. Or else, a menu has not been set then display a message.*/
-      if ( function_exists('has_nav_menu') && has_nav_menu('mobile-menu') ) {
-          wp_nav_menu( array(
-            'depth' => 6,
-            'sort_column' => 'menu_order',
-            'container' => 'ul',
-            'menu_id' => 'main-nav',
-            'menu_class' => 'nav mobile-menu',
-            'theme_location' => 'mobile-menu'
-          ) );
-          } else {
-             echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
-      }
-      ?>
-    </div>
+      <div class="collapse" id="collapseExample">
+        <a class="mb-m-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <?php
+        /* The below code checks if a mobile-menu is set from the backend in the menu settings. If a menu has been set it will be displayed in the header. Or else, a menu has not been set then display a message.*/
+        if ( function_exists('has_nav_menu') && has_nav_menu('mobile-menu') ) {
+            wp_nav_menu( array(
+              'depth' => 6,
+              'sort_column' => 'menu_order',
+              'container' => 'ul',
+              'menu_id' => 'main-nav',
+              'menu_class' => 'nav mobile-menu',
+              'theme_location' => 'mobile-menu'
+            ) );
+            } else {
+               echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
+        }
+        ?>
+        <div class="logo-zone text-center d-flex align-items-center flex-column position-relative">
+          <img class="" src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/logo-bonnefis-generique-couleur-fond-blanc.jpg" alt="Logo grand">
+          <a title="contact@bonnefis.fr" href="mailto:contact@bonnefis.fr" class="nav-link-2-mail">contact@bonnefis.fr</a>
+          <a title="0596849328" href="tel:0596849328" class="nav-link-2-tel pt-4">0596849328</a>
+        </div>
+      </div>
+	<header id="masthead" class="site-header navbar-static-top bg-white d-flex" role="banner">
+    <a class="mb-m-link align-items-center d-flex ml-3 burger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <div class="container">
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand m-0">
-                    <a class="mb-m-link align-items-center d-flex" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-bars" aria-hidden="true"></i></a>
-
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                         <a href="<?php echo esc_url( home_url( '/' )); ?>" class="text-center">
                             <img class="w-50" src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
@@ -55,7 +59,7 @@
                     <?php else : ?>
                         <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
                     <?php endif; ?>
-                    <a href="" class="mb-m-link align-items-center d-flex"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                    <a href="" class="mb-m-link send align-items-center d-flex"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
                 </div>
 
                 <?php

@@ -15,6 +15,7 @@ Text Domain:	 wp-bootstrap-starter-child
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
 }
 h1, h2 {
   font-size: 3.5rem;
@@ -101,20 +102,20 @@ h3 {
   text-decoration: none;
   font-weight: bold;
 }
-.nav-spe-mail a, .nav-spe-tel a {
+.nav-spe-mail a, .nav-spe-tel a, .nav-link-2-mail, .nav-link-2-tel {
   color: var(--seconde) !important;
   font-weight: bold;
 }
 .nav-spe-mail, .nav-spe-tel {
   padding-right: 2rem;
 }
-.nav-spe-mail a::before {
+.nav-spe-mail a::before, .nav-link-2-mail::before {
   font-family: "Font Awesome 5 Free";
   padding-right: 1em;
   content:"\f0e0";
   font-weight: bold;
 }
-.nav-spe-tel a::before {
+.nav-spe-tel a::before, .nav-link-2-tel::before {
   font-family: "Font Awesome 5 Free";
   padding-right: 1em;
   content:"\f879";
@@ -124,52 +125,75 @@ h3 {
   display: flex;
   align-items: center;
 }
-.navbar-brand .mb-m-link, #collapseExample a {
+.mb-m-link {
   color: var(--seconde);
 }
-.navbar-brand .mb-m-link:hover, #collapseExample a:hover {
+.mb-m-link:hover, #collapseExample .menu-item a:hover {
   color: var(--premiere);
 }
 #collapseExample .mb-m-link {
-  padding: 31% 5%;
-}
-#collapseExample a {
+  position: absolute;
+  padding: 1em 0 0 1em;
+  top: 0;
+  left: 0;
   font-size: 1.875rem;
-  display: flex;
-  align-items: center;
+}
+#collapseExample .menu-item a {
+  text-transform: uppercase;
+  color: var(--seconde);
+  font-size: 1.250rem;
+  font-weight: bold;
+}
+#collapseExample li {
+  margin-bottom: 1.938rem;
+}
+#collapseExample .sub-menu li {
+  margin-top: 1.938rem;
+}
+#collapseExample .sub-menu a:hover {
+  text-decoration: none;
+}
+#collapseExample .sub-menu a {
+  font-size: 1rem;
 }
 #collapseExample {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 50vw;
   top: 0;
   left: 0;
   padding: 2em;
   z-index: 99999;
   background-color: var(--white);
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.34)
 }
 .mb-m-link:hover {
   text-decoration: none;
 }
+.burger {
+  font-size: 1.438rem;
+}
+.logo-zone {
+  padding-top: 5em;
+}
 /*menu specifique mobile*/
 .mobile-menu{
-    display: none;
+    display: block;
+    position: relative;
+    left :5%;
+    padding-top: 5em;
 }
 @media only screen and (min-width: 1200px){
     .desktop-menu{
         display: block !important;
     }
-    .mobile-menu, .mb-m-link{
+    .send {
         display: none !important;
     }
 }
-
 @media only screen and (max-width: 1199px){
     .desktop-menu{
         display: none !important;
-    }
-    .mobile-menu{
-        display: block !important;
     }
     .navbar-brand > a {
       font-size: 1.5rem;
@@ -227,18 +251,22 @@ h3 {
 .souligneur-red::after, .souligneur-black::after {
   content: "";
   display: block;
-  height: 100%;
+  height: 10px;
   position: relative;
   z-index: 9999;
   background-repeat: no-repeat;
   background-position: left;
-  background-size: inherit;
+  background-size: 80px;
+  padding-top: 1.3rem;
 }
 .souligneur-red::after {
   background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-131@2x.png');
 }
 .souligneur-black::after {
   background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-132@2x.png');
+}
+.sepa {
+  width: 29px;
 }
 .logo-bg {
   background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/LOGO-BONNEFIS-B-COULEUR-FOND-NOIR@2x.png');
@@ -267,4 +295,7 @@ h3 {
     height: 100%;
     max-width: 200%;
   }
+}
+.avis {
+  padding-top: 6% !important;
 }
