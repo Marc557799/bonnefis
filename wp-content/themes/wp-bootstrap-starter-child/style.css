@@ -312,10 +312,10 @@ h3 {
   z-index: 9999;
 }
 .carousel-control-prev-icon {
-  background-image: url("http://localhost:8888/Bonnefis-for-GIT/wp-content/uploads/2020/07/Groupe-77@2x.png");
+  background-image: url("http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-77@2x.png");
 }
 .carousel-control-next-icon {
-  background-image: url("http://localhost:8888/Bonnefis-for-GIT/wp-content/uploads/2020/07/Groupe-78@2x.png");
+  background-image: url("http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-78@2x.png");
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
   width: 31.5px;
