@@ -59,7 +59,7 @@ get_header();
                     <div class="text-justify">
                       <?php the_field("vente")?>
                     </div>
-                    <a class="btn btn-premiere font-weight-bolder mt-4" href="#" role="button">Voir nos annonces</a>
+                    <a class="btn btn-premiere font-weight-bolder mt-4" href="https://www.leboncoin.fr/boutique/7559/sarl_garage_bonnefis.htm/" role="button">Voir nos annonces</a>
                   </div>
                   <div class="col-md-3 px-0 pb-5">
                     <img src="<?php the_field("atelier_image")?>" class="w-100 pb-4" alt="...">
@@ -110,7 +110,7 @@ get_header();
                       <h3 class="text-white souligneur-black">Vous n'avez pas trouvé le modèle qui vous correspond ?</h3>
                   </div>
                   <div class="col-md-4 pb-5">
-                    <a href="https://www.ad.fr/garage/garage-ad-expert-garage-bonnefis" class="btn-link text-uppercase font-weight-bold text-white" role="button">Envoyez nous vos envies</a>
+                    <a href="mailto:contact@bonnefis.fr" class="btn-link text-uppercase font-weight-bold text-white" role="button">Envoyez nous vos envies</a>
                     <p class="text-justify text-white font-italic mt-2">
                       Notre équipe s'engage à vous proposer un modèle dans les 72h.
                     </p>
