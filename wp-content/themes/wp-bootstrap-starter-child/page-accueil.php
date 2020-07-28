@@ -23,14 +23,11 @@ get_header();
               </ol>
               <div class="carousel-inner">
               <div class="overlay-1 w-100"></div>
-                <div class="carousel-item active">
-                  <img class="d-block img-fluid" src="<?php the_field("image_1")?>" alt="First slide">
+                <div class="carousel-item active" style="background-image:url('<?php the_field("image_1")?>'); background-size: cover;">
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid" src="<?php the_field("image_2")?>" alt="Second slide">
+                <div class="carousel-item" style="background-image:url('<?php the_field("image_2")?>'); background-size: cover;">
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid" src="<?php the_field("image_3")?>" alt="Third slide">
+                <div class="carousel-item" style="background-image:url('<?php the_field("image_3")?>'); background-size: cover;">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
