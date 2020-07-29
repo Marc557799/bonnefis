@@ -49,7 +49,7 @@ get_header();
                 <div class="row justify-content-around pt-5">
                   <div class="col-md-3 px-0 pb-5">
                     <img src="<?php the_field("vente_image")?>" class="w-100 pb-4" alt="...">
-                    <h3 class="mb-0">https://bonnefisautomobile.com/
+                    <h3 class="mb-0">
                       Vente
                     </h3>
                     <img src="https://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
