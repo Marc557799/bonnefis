@@ -14,7 +14,7 @@
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</div><!-- #content -->
-    <?php get_template_part( 'footer-widget' ); ?>
+  <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer black-container" role="contentinfo">
 		<div class="container-fluid logo-bg" id="contact">
 			<div class="container pt-5">
@@ -24,11 +24,11 @@
 							<h2 class="text-white souligneur-red mb-2">Contact</h2>
 						</div>
 						<p class="text-justify text-white font-weight-lighter" style="font-size:1.15rem;">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in uienply voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat norin proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+							<?php the_field("contact")?><br><br>
 							<a href="mailto:contact@bonnefis.fr" class="inline-link icn-bef mail" title="Contact par email">contact@bonnefis.fr</a><br><br>
 							<a href="tel:0596849328" class="inline-link icn-bef tel" title="Contact par téléphone">0596849328</a><br><br>
-							<a href="#" class="inline-link mr-3" title="Notre page Facebook"><i class="fab fa-facebook-f"></i></a>
-							<a href="#" class="inline-link" title="Notre page Instagram"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.facebook.com/GarageBonnefis" class="inline-link mr-3" title="Notre page Facebook"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://www.instagram.com/bonnefisautomobile/" class="inline-link" title="Notre page Instagram"><i class="fab fa-instagram"></i></a>
 						</p>
 					</div>
 					<div class="col-md-7 pb-5">

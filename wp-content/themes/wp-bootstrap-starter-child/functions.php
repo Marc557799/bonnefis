@@ -12,9 +12,6 @@
 	}
 	add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
-
-
-
 		// register a mobile menu
 	function wdm_register_mobile_menu() {
 	    add_theme_support( 'nav-menus' );
