@@ -43,13 +43,13 @@
         }
         ?>
         <div class="logo-zone text-center d-flex align-items-center flex-column position-relative">
-          <img class="" src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/logo-bonnefis-generique-couleur-fond-blanc.jpg" alt="Logo grand">
+          <img class="" src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/logo-bonnefis-generique-couleur-fond-blanc.jpg" alt="Logo grand">
           <a title="contact@bonnefis.fr" href="mailto:contact@bonnefis.fr" class="nav-link-2-mail">contact@bonnefis.fr</a>
-          <a title="0596849328" href="tel:0596849328" class="nav-link-2-tel pt-4">0596849328</a>
+          <a title="0565690025" href="tel:0565690025" class="nav-link-2-tel pt-4">0565690025</a>
         </div>
       </div>
 	<header id="masthead" class="site-header navbar-static-top bg-white d-flex" role="banner">
-    <a class="mb-m-link align-items-center d-flex ml-3 burger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <a class="mb-m-link align-items-center d-flex ml-3 burger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/menu-icon@2x.png" class="w-50"></a>
         <div class="container">
             <nav class="navbar navbar-expand-xl p-0">
                 <div class="navbar-brand m-0">

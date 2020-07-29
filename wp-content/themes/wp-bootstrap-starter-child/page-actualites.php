@@ -10,7 +10,7 @@ get_header();
           <div class="container-fluid" style="background-image:url('<?php the_field('image_de_la_banniere')?>'); background-repeat: no-repeat; background-size: cover; background-position:center;">
             <div class="row justify-content-center py-5 overlay">
                 <div class="page-title text-center my-5">
-                  <h1 class="text-uppercase font-weight-bold text-white txt-shadow">
+                  <h1 class="text-uppercase font-weight-bold text-white txt-shadow" style="font-weight: 300;">
                       <?php the_title()?>
                   </h1>
                   <h2 class="text-uppercase font-weight-bold text-white txt-shadow">
@@ -22,7 +22,7 @@ get_header();
           <div class="container-fluid">
               <div class="container">
                 <div class="row">
-                  <a href="<?php echo get_home_url()?>" class="inline-link icn-bef back" title="Retourner à la page d'accueil">Retour à l'accueil</a>
+                  <a href="<?php echo get_home_url()?>" class="inline-link icn-bef back mt-4" title="Retourner à la page d'accueil">Retour à l'accueil</a>
                 </div>
               </div>
               <div class="container pt-5">
@@ -35,7 +35,8 @@ get_header();
                         <?php while ( $posts_ex_query->have_posts() ) : $posts_ex_query->the_post(); ?>
                             <div class="col-md-3 px-0 pb-5">
                               <?php the_post_thumbnail(); ?>
-                              <h3><?php the_title(); ?></h3>
+                              <h3 class="mb-0 mt-4"><?php the_title(); ?></h3>
+                              <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-2" alt="Divider">
                               <p class="text-justify">
                                 <?php the_excerpt(); ?>
                               </p>

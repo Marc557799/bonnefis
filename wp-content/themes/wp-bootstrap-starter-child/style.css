@@ -26,6 +26,9 @@ h3 {
   font-weight: 300;
   font-size: 2rem;
 }
+h3.widget-title {
+  font-size: 2.375rem;
+}
 .subtitle {
   font-size: 1.6rem;
   font-weight: 500;
@@ -266,7 +269,7 @@ h3 {
 .grey-container-2 {
   background-color: var(--gray);
 }
-.souligneur-red::after, .souligneur-black::after {
+.souligneur-red::after, .souligneur-black::after, .widget-title::after {
   content: "";
   display: block;
   height: 10px;
@@ -277,17 +280,17 @@ h3 {
   background-size: 80px;
   padding-top: 1.3rem;
 }
-.souligneur-red::after {
-  background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-131@2x.png');
+.souligneur-red::after, .widget-title::after {
+  background-image: url('http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-131@2x.png');
 }
 .souligneur-black::after {
-  background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-132@2x.png');
+  background-image: url('http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-132@2x.png');
 }
 .sepa {
   width: 29px;
 }
 .logo-bg {
-  background-image: url('http://bonnefis.galago.fr/wp-content/uploads/2020/07/LOGO-BONNEFIS-B-COULEUR-FOND-NOIR@2x.png');
+  background-image: url('http://bonnefisautomobile.com/wp-content/uploads/2020/07/LOGO-BONNEFIS-B-COULEUR-FOND-NOIR@2x.png');
   background-repeat: no-repeat;
   background-position: top 0% left -21%;
   background-size: contain;
@@ -312,10 +315,10 @@ h3 {
   z-index: 9999;
 }
 .carousel-control-prev-icon {
-  background-image: url("http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-77@2x.png");
+  background-image: url("http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-77@2x.png");
 }
 .carousel-control-next-icon {
-  background-image: url("http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-78@2x.png");
+  background-image: url("http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-78@2x.png");
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
   width: 31.5px;

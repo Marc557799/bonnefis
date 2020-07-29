@@ -16,7 +16,7 @@
 				<div class="col-md-5 title px-5">
 					<?php
 					if ( is_single() ) :
-						the_title( '<h1 class="text-white souligneur-red mb-2">', '</h1>' );
+						the_title( '<h1 class="text-white souligneur-red mb-2" style="font-weight:300;">', '</h1>' );
 					else :
 						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 					endif;

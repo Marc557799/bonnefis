@@ -24,9 +24,9 @@
 							<h2 class="text-white souligneur-red mb-2">Contact</h2>
 						</div>
 						<p class="text-justify text-white font-weight-lighter" style="font-size:1.15rem;">
-							<?php the_field("contact")?><br><br>
+							<?php the_field("contact", 9)?><br><br>
 							<a href="mailto:contact@bonnefis.fr" class="inline-link icn-bef mail" title="Contact par email">contact@bonnefis.fr</a><br><br>
-							<a href="tel:0596849328" class="inline-link icn-bef tel" title="Contact par téléphone">0596849328</a><br><br>
+							<a href="tel:0565690025" class="inline-link icn-bef tel" title="Contact par téléphone">0565690025</a><br><br>
 							<a href="https://www.facebook.com/GarageBonnefis" class="inline-link mr-3" title="Notre page Facebook"><i class="fab fa-facebook-f"></i></a>
 							<a href="https://www.instagram.com/bonnefisautomobile/" class="inline-link" title="Notre page Instagram"><i class="fab fa-instagram"></i></a>
 						</p>

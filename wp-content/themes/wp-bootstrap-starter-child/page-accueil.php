@@ -52,7 +52,7 @@ get_header();
                     <h3 class="mb-0">
                       Vente
                     </h3>
-                    <img src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
+                    <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("vente")?>
                     </div>
@@ -63,7 +63,7 @@ get_header();
                     <h3 class="mb-0">
                       Atelier mécanique
                     </h3>
-                    <img src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
+                    <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("atelier_mecanique")?>
                     </div>
@@ -74,7 +74,7 @@ get_header();
                     <h3 class="mb-0">
                       Carroserie
                     </h3>
-                    <img src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
+                    <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("carrosserie")?>
                     </div>
@@ -149,7 +149,7 @@ get_header();
                             <div class="col-md-3 px-0 pb-5">
                               <?php the_post_thumbnail(); ?>
                               <h3 class="pt-4 mb-0"><?php the_title(); ?></h3>
-                              <img src="http://bonnefis.galago.fr/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3 sepa" alt="Divider">
+                              <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3 sepa" alt="Divider">
                               <p class="text-justify">
                                 <?php the_excerpt(); ?>
                               </p>
@@ -177,7 +177,7 @@ get_header();
                          </h2>
                        </div>
                        <div class="avis">
-                         <?php echo do_shortcode('[grw place_photo="https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png" place_name="GARAGE BONNEFIS" place_id="ChIJ20mwQWqHrRIRShnsayoQl2A" pagination="5" text_size="120" max_width="100%" refresh_reviews=true lazy_load_img=true reduce_avatars_size=true open_link=true nofollow_link=true]'); ?>
+                         <?php echo do_shortcode('[grw place_photo="https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png" place_name="GARAGE BONNEFIS" place_id="ChIJ20mwQWqHrRIRShnsayoQl2A" pagination="4" text_size="120" max_width="100%" refresh_reviews=true lazy_load_img=true reduce_avatars_size=true open_link=true nofollow_link=true]'); ?>
                        </div>
                     </div>
                     <div class="col-md-4 pb-5 d-flex flex-column" id="suiveznous">
