@@ -36,7 +36,7 @@ get_header();
                             <div class="col-md-3 px-0 pb-5">
                               <?php the_post_thumbnail(); ?>
                               <h3 class="mb-0 mt-4"><?php the_title(); ?></h3>
-                              <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-2" alt="Divider">
+                              <img src="https://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-2" alt="Divider">
                               <p class="text-justify">
                                 <?php the_excerpt(); ?>
                               </p>

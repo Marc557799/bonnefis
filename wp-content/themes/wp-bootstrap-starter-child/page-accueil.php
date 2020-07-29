@@ -49,10 +49,10 @@ get_header();
                 <div class="row justify-content-around pt-5">
                   <div class="col-md-3 px-0 pb-5">
                     <img src="<?php the_field("vente_image")?>" class="w-100 pb-4" alt="...">
-                    <h3 class="mb-0">
+                    <h3 class="mb-0">https://bonnefisautomobile.com/
                       Vente
                     </h3>
-                    <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
+                    <img src="https://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("vente")?>
                     </div>
@@ -63,7 +63,7 @@ get_header();
                     <h3 class="mb-0">
                       Atelier mécanique
                     </h3>
-                    <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
+                    <img src="https://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("atelier_mecanique")?>
                     </div>
@@ -74,7 +74,7 @@ get_header();
                     <h3 class="mb-0">
                       Carroserie
                     </h3>
-                    <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
+                    <img src="https://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="sepa mb-3" alt="Divider">
                     <div class="text-justify">
                       <?php the_field("carrosserie")?>
                     </div>
