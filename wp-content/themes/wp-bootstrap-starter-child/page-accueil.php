@@ -152,7 +152,7 @@ get_header();
                             <div class="col-md-3 px-0 pb-5">
                               <div class="w-100 mb-4" style="background-image:url('<?php the_post_thumbnail_url(); ?>'); height:180px; background-size: cover;"></div>
                               <h3 class="mb-0"><?php the_title(); ?></h3>
-                              <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3 sepa" alt="Divider">
+                              <img src="https://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3 sepa" alt="Divider">
                               <p class="text-justify">
                                 <?php the_excerpt(); ?>
                               </p>
