@@ -55,12 +55,13 @@
                 <div class="navbar-brand m-0">
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                         <a href="<?php echo esc_url( home_url( '/' )); ?>" class="text-center">
-                            <img class="w-50" src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                            <img class="w-50 logo-dsktp" src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                            <img class="logo-mobile" style="height:4rem;"src="https://bonnefisautomobile.com/wp-content/uploads/2020/07/LOGO_BONNEFIS-B-COULEUR-FOND-BLANC-e1596034037134.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                         </a>
                     <?php else : ?>
                         <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
                     <?php endif; ?>
-                    <a href="mailto:contact@bonnefis.fr" class="mb-m-link send align-items-center d-flex"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+
                 </div>
                 <?php
                 wp_nav_menu(array(
@@ -77,6 +78,7 @@
                 ?>
             </nav>
         </div>
+      <a href="mailto:contact@bonnefis.fr" class="mb-m-link align-items-center d-flex mx-3 send"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">
 		<div class="container-fluid">

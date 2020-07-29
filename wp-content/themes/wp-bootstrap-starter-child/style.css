@@ -204,6 +204,9 @@ h3.widget-title {
       width: 70vw;
       right: -70vw;
     }
+    .logo-mobile {
+      display:none;
+    }
 }
 @media only screen and (max-width: 1199px){
     .desktop-menu{
@@ -225,6 +228,9 @@ h3.widget-title {
     .collapseClose {
       width: 30vw;
       right: -30vw;
+    }
+    .logo-dsktp {
+      display:none;
     }
 }
 /*end of mobile specifuqe menu*/

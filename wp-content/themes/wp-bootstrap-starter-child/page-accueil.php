@@ -48,7 +48,8 @@ get_header();
                 </div>
                 <div class="row justify-content-around pt-5">
                   <div class="col-md-3 px-0 pb-5">
-                    <img src="<?php the_field("vente_image")?>" class="w-100 pb-4" alt="...">
+                    <div class="w-100 mb-4" style="background-image:url('<?php the_field("vente_image")?>'); height:180px; background-size: cover;">
+                    </div>
                     <h3 class="mb-0">
                       Vente
                     </h3>
@@ -59,7 +60,8 @@ get_header();
                     <a class="btn btn-premiere font-weight-bolder mt-4" href="https://www.leboncoin.fr/boutique/7559/sarl_garage_bonnefis.htm/" role="button" target="_blank">Voir nos annonces</a>
                   </div>
                   <div class="col-md-3 px-0 pb-5">
-                    <img src="<?php the_field("atelier_image")?>" class="w-100 pb-4" alt="...">
+                    <div class="w-100 mb-4" style="background-image:url('<?php the_field("atelier_image")?>'); height:180px; background-size: cover;">
+                    </div>
                     <h3 class="mb-0">
                       Atelier mécanique
                     </h3>
@@ -70,7 +72,8 @@ get_header();
                     <a class="btn btn-seconde font-weight-bolder mt-4" href="https://www.ad.fr/garage/garage-ad-expert-garage-bonnefis" role="button" target="_blank">Prendre RDV</a>
                   </div>
                   <div class="col-md-3 px-0 pb-5">
-                    <img src="<?php the_field("carrosserie_image")?>" class="w-100 pb-4" alt="...">
+                    <div class="w-100 mb-4" style="background-image:url('<?php the_field("carrosserie_image")?>'); height:180px; background-size: cover;">
+                    </div>
                     <h3 class="mb-0">
                       Carroserie
                     </h3>
@@ -147,8 +150,8 @@ get_header();
                         <!-- the loop -->
                         <?php while ( $posts_ex_query->have_posts() ) : $posts_ex_query->the_post(); ?>
                             <div class="col-md-3 px-0 pb-5">
-                              <?php the_post_thumbnail(); ?>
-                              <h3 class="pt-4 mb-0"><?php the_title(); ?></h3>
+                              <div class="w-100 mb-4" style="background-image:url('<?php the_post_thumbnail_url(); ?>'); height:180px; background-size: cover;"></div>
+                              <h3 class="mb-0"><?php the_title(); ?></h3>
                               <img src="http://bonnefisautomobile.com/wp-content/uploads/2020/07/Groupe-133@2x.png" class="mb-3 sepa" alt="Divider">
                               <p class="text-justify">
                                 <?php the_excerpt(); ?>

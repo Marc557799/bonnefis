@@ -13,7 +13,7 @@ get_header();
                   <h1 class="text-uppercase font-weight-bold text-white txt-shadow" style="font-weight: 300;">
                       <?php the_title()?>
                   </h1>
-                  <h2 class="text-uppercase font-weight-bold text-white txt-shadow">
+                  <h2 class="subtitle text-uppercase font-weight-bold text-white txt-shadow">
                       Votre spécialiste auto à Rodez
                   </h2>
                 </div>
@@ -26,9 +26,9 @@ get_header();
                 </div>
               </div>
               <div class="container pt-5">
-                <div class="row justify-content-between pb-3">
+                <div class="row justify-content-around pb-3">
                     <?php
-                    // affiche les 3 derniers articles
+                    // affiche les articles
                     $posts_ex_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
                     <?php if ( $posts_ex_query->have_posts() ) : ?>
                         <!-- the loop -->
